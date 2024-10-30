@@ -1,10 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    background: #f8f6f6f3;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+
+header {
+    font-family: Montserrat, sans-serif;
+    background-color: #fff;
+    color: #333;
+    border-bottom: 2px solid #d90f6a;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    text-align: center;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    z-index: 100;
+}
+
+h1 {
+    font-size: 20px;
+    font-family: Montserrat, sans-serif;
+    color: #2C3E50;
+    font-weight: normal;
+    margin-bottom: 18px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
 code {
-  background: #d0d0d5;
+  background: #efeff0;
+  margin-top: 10px;
+
 }
 
 .container {
   display: flex;
   flex-direction: column;
+  margin-top: 100px;
+  padding: 30px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 80px auto 20px;
+  border-radius: 12px;
+  text-align: left;
 }
 
 .form-container {
@@ -14,6 +73,19 @@ code {
 
 textarea {
   width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: 0px solid #ffffff;
+  border-radius: 0px;
+  margin-bottom: 10px;
+  width: 90%;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+  color: #2C3E50;
+  font-size: 13px;
+  border-bottom: 1px solid #ee0979;
+  outline: none;
+  transition: all 0.3s ease;
 }
 
 #user-stories {
@@ -30,21 +102,25 @@ textarea {
   display: flex;
   flex-direction: row;
   margin-left: 20px;
+  color: #514e4e;
 }
 
 #sudoku-grid {
   text-align: center;
   display: inline;
+  color: #514e4e;
 }
 
 .grid {
-  border: 3px solid;
+  border: 1px solid;
   border-spacing: 0;
+  color: #514e4e;
 }
 
 td {
   border: 1px solid;
   padding: 0.3em;
+  color: #514e4e;
 }
 
 .yAxisLegend {
@@ -79,11 +155,51 @@ td {
 }
 
 .sudoku-input {
-  border: 1px solid black;
+  border: 1px solid #514e4e;
   width: 2em;
   height: 2em;
   text-align: center;
 }
+
+#coord, #val {
+  margin-top: 10px;
+  padding: 10px;
+  border: 0px solid #ffffff;
+  border-radius: 0px;
+  margin-bottom: 10px;
+  width: 90%;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+  color: #2C3E50;
+  font-size: 13px;
+  border-bottom: 1px solid #ee0979;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+#coord:focus, #val:focus {
+  border-bottom: 1px solid #d90f6a;
+}
+
+#solve-button, #check-button {
+  background-color: #ee0979;
+  color: #fff;
+  border: none;
+  padding: 9px 20px;
+  cursor: pointer;
+  font-weight: normal;
+  border-radius: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  font-size: 11px;
+}
+
+#solve-button:hover, #check-button:hover {
+    background-color: #d90f6a;
+}
+
 
 .C1, .C2, .C3, .C4, .C5, .C6, .C7, .C8, .C9, .F1, .F2, .F3, .F4, .F5, .F6, .F7, .F8, .F9 {
   border-bottom: 3px solid;
@@ -101,4 +217,51 @@ td {
   .form-container {
     align-self: center;
   }
+}
+footer {
+  font-family: montserrat, arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  border-top: 2px solid #d90f6a;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); 
+  font-weight: normal;
+  position: relative;
+  text-align: center;
+  position: fixed;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  z-index: 10;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  z-index: 100; 
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+cute-footer p {
+  margin: 5px 0;
+}
+
+cute-footer a {
+  color: #d90f6a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+cute-footer .heart-link {
+  color: #d90f6a; 
+  font-size: 18px;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+cute-footer .heart-link:hover {
+  transform: scale(1.2); 
 }

@@ -13,7 +13,8 @@
 
 <body>
 	<header>
-		<h1>Sudoku Solver</h1>
+		<h1>Solucionador de Sudoku
+    </h1>
 	</header>
 	<div class="container">
 		<div class="form-container">
@@ -25,13 +26,13 @@
           name="puzzle"
         ></textarea>
         <br />
-        <input type="button" value="Solve" id="solve-button"/>
+        <input type="button" value="Resolver" id="solve-button"/>
         <div id="error-msg"></div>
         </form>
         <form id="check-form">
-          <p>Coordinate (A1): <input id="coord" class="checker" type="text" name="coordinate"></p>
-          <p>Value (1-9): <input class="checker" type="text" id="val" name="value"></p>
-          <input type="button" id="check-button" value="Check Placement">
+          <p>Coordenada (A1): <input id="coord" class="checker" type="text" name="coordinate"></p>
+          <p>Valor (1-9): <input class="checker" type="text" id="val" name="value"></p>
+          <input type="button" id="check-button" value="Verificar posicionamento">
         </form>
         <span id="error"></span>
       </div>
@@ -341,8 +342,7 @@
                 <td class="I8 sudoku-input" title="I8">
                   
                 </td>
-                <td class="I9 sudoku-input" title="I9">
-                  
+                <td class="I9 sudoku-input" title="I9"
                 </td>
               </tr>
             </tbody>
@@ -350,6 +350,15 @@
         </div>
       </div>
     </div>
-  </body>
-  <script type="module" src="../public/index.js"></script>
+      <script type="module" src="../public/index.js"></script>
+    <footer class="cute-footer">
+      <p>
+        Desenvolvido 
+        <a href="https://github.com/samanthasilva/sudoku" target="_blank" class="heart-link">❤</a>
+        por Samantha Silva
+      </p>
+      </footer>  
+  </body>    
+</body>
+
 </html>
